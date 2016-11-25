@@ -4,7 +4,7 @@ var fetch = require('node-fetch');
 var BloomFilter = require('bloomfilter').BloomFilter;
 
 var bloom = new BloomFilter(
-    1000000, // 10mb, number of bits to allocate.
+    10000000, // 10mb, number of bits to allocate.
     16        // number of hash functions.
 );
 
